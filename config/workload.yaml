@@ -19,7 +19,7 @@ spec:
     git:
       url: https://github.com/ykhadilkar/spring-music
       ref:
-        branch: main
+        branch: master
   serviceClaims:
     - name: db
       ref:
