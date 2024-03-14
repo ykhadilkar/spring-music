@@ -20,9 +20,9 @@ spec:
       url: https://github.com/ykhadilkar/spring-music
       ref:
         branch: main
-        serviceClaims:
-          - name: db
-            ref:
-              apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-              kind: ClassClaim
-              name: external-mysql-db-claim
+  serviceClaims:
+    - name: db
+      ref:
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+        kind: ClassClaim
+        name: external-mysql-db-claim
