@@ -25,5 +25,5 @@ spec:
     - name: db
       ref:
         apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-        kind: ClassClaim
+        kind: ResourceClaim
         name: external-mysql-db-claim
