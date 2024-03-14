@@ -4,17 +4,18 @@ metadata:
   name: spring-music
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    apps.tanzu.vmware.com/has-tests: true
-    app.kubernetes.io/part-of: pandora
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    app.kubernetes.io/part-of: spring-music
 spec:
   build:
     env:
     - name: BP_JVM_VERSION
-      value: 17
+      value: "17"
   params:
-  - name: annotations
-    value:
-      autoscaling.knative.dev/minScale: "1"
+    - name: annotations
+      value:
+        autoscaling.knative.dev/minScale: "1"
   source:
     git:
       url: https://github.com/ykhadilkar/spring-music
