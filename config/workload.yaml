@@ -22,8 +22,8 @@ spec:
       ref:
         branch: master
   serviceClaims:
-    - name: db
-      ref:
-        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-        kind: ResourceClaim
-        name: external-mysql-db-claim
+  - name: db
+    ref:
+       apiVersion: v1
+       kind: Secret
+       name: external-mysql-db-claim
