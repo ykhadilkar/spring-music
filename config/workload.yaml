@@ -26,4 +26,4 @@ spec:
     ref:
        apiVersion: v1
        kind: Secret
-       name: external-mysql-db-claim
+       name: external-mysql-db-binding-compatible
