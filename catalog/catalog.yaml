@@ -1,15 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: pandora
-  description: Pandora Streaming Service
+  name: Spring Music
+  description: Spring Music Streaming Service
   tags:
     - java
     - spring
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=pandora'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-music'
 spec:
   type: service
   lifecycle: production
