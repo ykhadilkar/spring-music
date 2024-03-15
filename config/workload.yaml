@@ -29,4 +29,4 @@ spec:
     ref:
        apiVersion: v1
        kind: Secret
-       name: external-mysql-db-binding-compatible
+       name: spring-music-db
