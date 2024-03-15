@@ -8,6 +8,9 @@ metadata:
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     app.kubernetes.io/part-of: spring-music
 spec:
+  env:
+    - name: SPRING_PROFILES_ACTIVE
+      value: mysql
   build:
     env:
     - name: BP_JVM_VERSION
