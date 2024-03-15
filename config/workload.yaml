@@ -27,6 +27,6 @@ spec:
   serviceClaims:
   - name: db
     ref:
-       apiVersion: v1
-       kind: Secret
+       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+       kind: ClassClaim
        name: spring-music-db
